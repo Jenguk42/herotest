@@ -16,9 +16,10 @@ function shareStoryWeb() {
     const name = document.querySelector("#heroName").value;
     const resultUrl = url + 'page/result-' + finalGrade + '.html';
 
-    Kakao.Story.share({
+    Kakao.Story.open({
       url: resultUrl,
       text: `코드네임 ${name}의 히어로 등급은 ${infoList[finalGrade].name}입니다.
+      ${resultUrl}
 당신은 몇 등급 히어로인가요? 링크를 통해 확인하세요!
 
 #KNIS #지구를지켜라`,
