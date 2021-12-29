@@ -6,6 +6,14 @@ const endPoint = 5;
 const select = [];
 let finalGrade = null;
 
+function open(i) {
+    if (i === 0) {
+        window.open("https://constellations421.wixsite.com/nis-official/");
+    } else {
+        window.open("https://knis-herotest.netlify.app/", "_self");
+    }
+}
+
 $("#heroName").keyup(function(event) {
     if (event.keyCode === 13) {
         $("#button-addon2").click();
@@ -39,6 +47,10 @@ function calResult() {
 
 function showResult(point, i) {
     finalGrade = i;
+
+    const name = document.querySelector("#heroName").value;
+    $('h1').append(`코드네임 ${name}의
+히어로 등급`);
     const resultName = document.querySelector(".resultName");
     
     var resultImg = document.createElement("img");

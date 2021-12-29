@@ -1,3 +1,5 @@
+
+
 const qnaList = [
   {
     q: '1. 능력의 강도 또는 크기를 최대한 객관적으로 표현한다면?',
@@ -54,7 +56,7 @@ const qnaList = [
 const infoList = [
   {
     name: 'S+',
-    desc: ''
+    desc: '공인 히어로 등록에 대한 더 자세한 사항은 NIS 홈페이지 또는 가까운 히어로 센터에서 확인할 수 있습니다.'
   },
   {
     name: 'A+',
