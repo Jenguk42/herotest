@@ -6,7 +6,7 @@ const select = [];
 let finalGrade = null;
 
 function shareStoryWeb() {
-    const resultUrl = 'page/result-' + finalGrade + '.html';
+    const resultUrl = 'https://knis-herotest.netlify.app/page/result-' + finalGrade + '.html';
 
     Kakao.Story.share({
       url: 'resultUrl',
