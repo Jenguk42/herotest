@@ -2,6 +2,17 @@ body{
     background-color: transparent;
 }
 
+h1 {
+    text-align: center;
+}
+
+.container {
+    min-width: 400px;
+    max-width: 1020px;
+    display: flex;
+    align-items: center;
+}
+
 * {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }

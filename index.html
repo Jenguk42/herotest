@@ -54,23 +54,23 @@
 <body> 
     <div class="container">
         <section id="main" class="mx-auto my-5 py-5 px-4">
-            <h1>히어로 자가진단 테스트</h1>
-            <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+            <h1>히어로 자가진단 <br> 간단 검사지</h1>
+            <div class="col-lg-6 col-md-8 col-sm-8 col-8 mx-auto">
                 <img src="./img/nis-logo.png" alt="mainImage" class="img-fluid">
             </div>
-            <p class="pt-3 fs-5">
-                능력을 갈고 닦아 사회에 공헌하는 것은 모든 히어로의 자랑스러운 권리입니다. <br>
-                직접 협회에 걸음하기 두려우신가요? 걱정 마세요. <br>
-                본 자가진단을 통해 손쉽게 본인의 등급을 알아볼 수 있습니다. <br><br>
-                시작하기 버튼을 눌러 당신의 숨겨진 역량을 측정하세요!
+            <p id="mainDesc" class="pt-3 px-4">
+                능력을 갈고 닦아 사회에 공헌하는 것은 모든 히어로의 자랑스러운 권리입니다. 본인이 정말 능력자인지 궁금하지만, 직접 협회에 걸음하기는 두려우신가요? 본 자가진단을 통해 부담 없고 손쉽게 본인의 등급을 알아볼 수 있습니다.<br><br>코드네임을 입력하고 시작하기 버튼을 눌러 당신의 숨겨진 역량을 측정하세요!
             </p>
+            <div class="input-group my-3 pt-3">
+                <input type="text" class="form-control" placeholder="코드네임" aria-label="codename" aria-describedby="button-addon2">
+                <button type="button" class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="js:begin()">시작하기</button>
+            </div>
             <p id="notice">
-                ※ 본 테스트는 공인 히어로 등록증 발급에 사용할 수 없으며, 테스트 결과 및 개인정보는 KNIS에 기록됩니다.
+                ※ 본 테스트는 공인 히어로 등록증 발급에 사용할 수 없으며, <br> 테스트 결과 및 개인정보는 KNIS에 기록될 수 있습니다.
             </p>
-            <button type="button" class="btn btn-secondary btn-lg mt-4" onclick="js:begin()">시작하기</button>
         </section>
         <section id="qna" class="mx-auto my-5 py-5 px-4">
-            <div class="status mx-auto my-3">
+            <div class="status mx-auto mt-5">
                 <div class="statusBar">
 
                 </div>
@@ -83,9 +83,9 @@
             </div>
         </section>
         <section id="result" class="mx-auto my-5 py-5 px-4">
-            <h1>당신의 히어로 등급은?</h1>
+            <h1>당신의 히어로 등급</h1>
             <div id="resultImg" class="my-5"></div>
-            <div id="resultDesc" class = "mb-4 px-5"></div>
+            <div id="resultDesc" class = "mb-4 px-3"></div>
             <a href="javascript:shareStoryWeb()">
                 <button id='share' type="button" class="btn btn-lg mt-4">카카오스토리 공유하기</button>
             </a>

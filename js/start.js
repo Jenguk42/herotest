@@ -1,12 +1,13 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
+const ulr = 'https://knis-herotest.netlify.app/';
 const endPoint = 5;
 const select = [];
 let finalGrade = null;
 
 function shareStoryWeb() {
-    const resultUrl = 'https://knis-herotest.netlify.app/page/result-' + finalGrade + '.html';
+    const resultUrl = url + 'page/result-' + finalGrade + '.html';
     console.log(resultUrl);
 
     Kakao.Story.share({
@@ -122,7 +123,7 @@ function addAnswer(answerText, qIdx, idx) {
     var answer = document.createElement('button');
     answer.classList.add('answerList');
     answer.classList.add('my-3');
-    answer.classList.add('py-4');
+    answer.classList.add('py-3');
     answer.classList.add('mx-auto');
     answer.classList.add('fadeIn');
      
