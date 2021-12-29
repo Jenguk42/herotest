@@ -7,9 +7,10 @@ let finalGrade = null;
 
 function shareStoryWeb() {
     const resultUrl = 'https://knis-herotest.netlify.app/page/result-' + finalGrade + '.html';
+    console.log(resultUrl);
 
     Kakao.Story.share({
-      url: 'resultUrl',
+      url: resultUrl,
       text: `코드네임 뫄뫄의 히어로 등급은 ${infoList[finalGrade].name}입니다.
 당신은 몇 등급 히어로인가요? 링크를 통해 확인하세요!
 
