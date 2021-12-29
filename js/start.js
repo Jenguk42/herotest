@@ -7,12 +7,13 @@ const select = [];
 let finalGrade = null;
 
 function shareStoryWeb() {
+    const name = document.querySelector("#heroName").value;
     const resultUrl = url + 'page/result-' + finalGrade + '.html';
     console.log(resultUrl);
 
     Kakao.Story.share({
       url: resultUrl,
-      text: `코드네임 뫄뫄의 히어로 등급은 ${infoList[finalGrade].name}입니다.
+      text: `코드네임 ${name}의 히어로 등급은 ${infoList[finalGrade].name}입니다. ${resultUrl}
 당신은 몇 등급 히어로인가요? 링크를 통해 확인하세요!
 
 #KNIS #지구를지켜라`,
@@ -163,6 +164,12 @@ function goNext(qIdx) {
 }
 
 function begin() {
+    const name = document.querySelector("#heroName").value;
+    if (name === undefined || name === '' || name == null) {
+        alert('코드네임을 입력해주세요.');
+        return;
+    }
+
     main.style.WebkitAnimation = "fadeOut 0.5s";
     main.style.animation = "fadeOut 0.5s";
     setTimeout(() => {
