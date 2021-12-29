@@ -4,6 +4,7 @@ const result = document.querySelector("#result");
 const url = 'https://knis-herotest.netlify.app/';
 const endPoint = 5;
 const select = [];
+let heroName = '';
 let finalGrade = null;
 
 $("#heroName").keyup(function(event) {
@@ -11,20 +12,6 @@ $("#heroName").keyup(function(event) {
         $("#button-addon2").click();
     }
 });
-
-function shareStoryWeb() {
-    const name = document.querySelector("#heroName").value;
-    const resultUrl = url + 'page/result-' + finalGrade + '.html';
-
-    Kakao.Story.open({
-      url: resultUrl,
-      text: `코드네임 ${name}의 히어로 등급은 ${infoList[finalGrade].name}입니다.
-      ${resultUrl}
-당신은 몇 등급 히어로인가요? 링크를 통해 확인하세요!
-
-#KNIS #지구를지켜라`,
-    })
-  }
 
 function calResult() {
     var total = 0;
@@ -40,8 +27,8 @@ function calResult() {
 function showResult(point, i) {
     finalGrade = i;
 
-    const name = document.querySelector("#heroName").value;
-    $('h1').append(`코드네임 ${name}의 히어로 등급`);
+    heroName = document.querySelector("#heroName").value;
+    $('h1').append(`코드네임 ${heroName}의 히어로 등급`);
     const resultName = document.querySelector(".resultName");
     
     var resultImg = document.createElement("img");
@@ -58,7 +45,7 @@ function showResult(point, i) {
     imgDiv.appendChild(resultImg);
 
     const resultDesc = document.querySelector('#resultDesc');
-    resultDesc.innerHTML = infoList[i].desc;
+    resultDesc.innerHTML = `${heroName}님의 등급은 ${infoList[i].name}입니다.` + infoList[i].desc;
 }
 
 function setResult() {
