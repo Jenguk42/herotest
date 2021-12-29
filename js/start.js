@@ -6,14 +6,6 @@ const endPoint = 5;
 const select = [];
 let finalGrade = null;
 
-function open(i) {
-    if (i === 0) {
-        window.open("https://constellations421.wixsite.com/nis-official/");
-    } else {
-        window.open("https://knis-herotest.netlify.app/", "_self");
-    }
-}
-
 $("#heroName").keyup(function(event) {
     if (event.keyCode === 13) {
         $("#button-addon2").click();

@@ -34,3 +34,8 @@
     background-color: #454b54;
     color: whitesmoke;
 }
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
