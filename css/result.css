@@ -6,6 +6,13 @@
     border-radius: 15px;
 }
 
+#shareResult {
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+}
+
 #resultDesc {
     text-align: justify;
     font-size: 17px;
@@ -23,7 +30,7 @@
     border: 1px solid #fee50180;
 }
 
-#nisLink:hover, #nisLink:focus {
+#nisLink:hover, #nisLink:focus, #tryAgain:hover, tryAgain:focus {
     background-color: #454b54;
     color: whitesmoke;
 }

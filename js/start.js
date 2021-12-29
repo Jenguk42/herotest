@@ -3,6 +3,17 @@ const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 const endPoint = 5;
 const select = [];
+let finalGrade = null;
+
+function shareStoryWeb() {
+    Kakao.Story.share({
+      url: 'https://knis-herotest.netlify.app/',
+      text: `코드네임 뫄뫄의 히어로 등급은 ${infoList[finalGrade].name}입니다.
+당신은 몇 등급 히어로인가요? 링크를 통해 확인하세요!
+
+#KNIS #지구를지켜라`,
+    })
+  }
 
 function calResult() {
     var total = 0;
@@ -16,6 +27,7 @@ function calResult() {
 }
 
 function showResult(point, i) {
+    finalGrade = i;
     const resultName = document.querySelector(".resultName");
     
     var resultImg = document.createElement("img");
