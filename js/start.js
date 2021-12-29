@@ -12,10 +12,6 @@ $("#heroName").keyup(function(event) {
     }
 });
 
-$("#button-addon2").click( ()=> {
-    begin();
-})
-
 function shareStoryWeb() {
     const name = document.querySelector("#heroName").value;
     const resultUrl = url + 'page/result-' + finalGrade + '.html';
@@ -136,7 +132,7 @@ function addAnswer(answerText, qIdx, idx) {
     answer.classList.add('py-3');
     answer.classList.add('mx-auto');
     answer.classList.add('fadeIn');
-     
+
     a.appendChild(answer);
     answer.innerHTML = answerText;
 
