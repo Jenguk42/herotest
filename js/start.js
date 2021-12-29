@@ -41,8 +41,7 @@ function showResult(point, i) {
     finalGrade = i;
 
     const name = document.querySelector("#heroName").value;
-    $('h1').append(`코드네임 ${name}의
-히어로 등급`);
+    $('h1').append(`코드네임 ${name}의 히어로 등급`);
     const resultName = document.querySelector(".resultName");
     
     var resultImg = document.createElement("img");

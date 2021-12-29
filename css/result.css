@@ -6,6 +6,16 @@
     border-radius: 15px;
 }
 
+#heroName, button {
+    word-break: keep-all;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #shareResult {
     background-color: whitesmoke;
     width: 80%;
@@ -19,7 +29,7 @@
 }
 
 #share {
-    color: white;
+    color: #3B1E1E;
     background-color: #FEE500;
     border: 1px solid #FEE500;
     margin-right: 20px;
@@ -35,7 +45,11 @@
     color: whitesmoke;
 }
 
-#buttonContainer {
-  display: flex;
-  flex-direction: row;
+
+@media (max-width: 680px) {
+    #buttonContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
