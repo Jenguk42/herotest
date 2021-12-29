@@ -1,0 +1,29 @@
+#result {
+    display: none;
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#resultDesc {
+    text-align: justify;
+    font-size: 17px;
+}
+
+#share {
+    color: white;
+    background-color: #FEE500;
+    border: 1px solid #FEE500;
+    margin-right: 20px;
+}
+
+#share:hover, #share:focus {
+    background-color: #fee50180;
+    border: 1px solid #fee50180;
+}
+
+#nisLink:hover, #nisLink:focus {
+    background-color: #454b54;
+    color: whitesmoke;
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: transparent;
+}
+
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+#notice {
+    color: #a8b0bd;
+    font-size: 10px;
+}
