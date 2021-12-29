@@ -46,10 +46,10 @@ function showResult(point, i) {
     var imgURL = 'img/image-' + i + '.png';
     resultImg.src = imgURL;
     resultImg.alt = point;
-    resultImg.classList.add("col-lg-6");
-    resultImg.classList.add("col-md-8");
-    resultImg.classList.add("col-sm-9");
-    resultImg.classList.add("col-9");
+    resultImg.classList.add("col-lg-4");
+    resultImg.classList.add("col-md-4");
+    resultImg.classList.add("col-sm-6");
+    resultImg.classList.add("col-6");
     resultImg.classList.add("mx-auto");
 
     imgDiv.appendChild(resultImg);
@@ -131,6 +131,7 @@ function addAnswer(answerText, qIdx, idx) {
     answer.classList.add('answerList');
     answer.classList.add('my-3');
     answer.classList.add('py-3');
+    answer.classList.add('px-3');
     answer.classList.add('mx-auto');
     answer.classList.add('fadeIn');
 

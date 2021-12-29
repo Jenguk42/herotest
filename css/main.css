@@ -11,8 +11,8 @@
 }
 
 .input-group {
-    width: 60%;
-    text-align: center;
+    width: 80%;
+    justify-content: center;
 }
 
 @media (max-width: 540px) {

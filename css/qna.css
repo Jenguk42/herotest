@@ -1,13 +1,14 @@
 #qna {
     display: none;
     background-color: whitesmoke;
-    width: 80%;
+    width: 70%;
     text-align: center;
     border-radius: 15px;
 }
 
 .qBox {
     font-size: 21px;
+    word-break: keep-all;
 }
 
 .answerList {
@@ -15,6 +16,7 @@
     border-radius: 10px;
     display: block;
     width: 80%;
+    text-align: justify;
 }
 
 .answerList:hover, .answerList:focus {
