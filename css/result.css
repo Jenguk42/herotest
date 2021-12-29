@@ -6,7 +6,7 @@
     border-radius: 15px;
 }
 
-#heroName, button {
+#heroName, button, #gradeDec {
     word-break: keep-all;
 }
 
@@ -25,7 +25,7 @@
 
 #resultDesc {
     text-align: justify;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #share {

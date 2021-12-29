@@ -29,7 +29,6 @@ function showResult(point, i) {
 
     heroName = document.querySelector("#heroName").value;
     $('h1').append(`코드네임 ${heroName}의 히어로 등급`);
-    const resultName = document.querySelector(".resultName");
     
     var resultImg = document.createElement("img");
     const imgDiv = document.querySelector('#resultImg');
@@ -41,11 +40,16 @@ function showResult(point, i) {
     resultImg.classList.add("col-sm-6");
     resultImg.classList.add("col-6");
     resultImg.classList.add("mx-auto");
-
     imgDiv.appendChild(resultImg);
 
+    const gradeDec = document.querySelector('#gradeDec');
+    var content = document.createElement("h4");
+    content.textContent = `${heroName} 님의 모의 등급은 ${infoList[i].name}입니다.`
+    content.classList.add("pb-3");
+    gradeDec.appendChild(content);
+
     const resultDesc = document.querySelector('#resultDesc');
-    resultDesc.innerHTML = `${heroName}님의 등급은 ${infoList[i].name}입니다.` + infoList[i].desc;
+    resultDesc.innerHTML = infoList[i].desc;
 }
 
 function setResult() {
