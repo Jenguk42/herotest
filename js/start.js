@@ -28,7 +28,9 @@ function showResult(point, i) {
     finalGrade = i;
 
     heroName = document.querySelector("#heroName").value;
-    $('h1').append(`코드네임 ${heroName}의 히어로 등급`);
+    $('h1').append('코드네임 ' + heroName);
+    $('h1').append('<br>');
+    $('h1').append('히어로 등급');
     
     var resultImg = document.createElement("img");
     const imgDiv = document.querySelector('#resultImg');
@@ -123,11 +125,8 @@ function addAnswer(answerText, qIdx, idx) {
     var a = document.querySelector('.answerBox');
     var answer = document.createElement('button');
     answer.classList.add('answerList');
-    answer.classList.add('my-3');
-    answer.classList.add('py-3');
-    answer.classList.add('px-3');
-    answer.classList.add('mx-auto');
     answer.classList.add('fadeIn');
+
 
     a.appendChild(answer);
     answer.innerHTML = answerText;

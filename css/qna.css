@@ -4,11 +4,21 @@
     width: 80%;
     text-align: center;
     border-radius: 15px;
+    margin: 3rem auto;
+    padding: 3rem 1.5rem;
 }
 
 .qBox {
     font-size: 21px;
     word-break: keep-all;
+    margin: 3rem 1.5rem;
+}
+
+.answerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .answerList {
@@ -16,7 +26,10 @@
     border-radius: 10px;
     display: block;
     width: 80%;
-    text-align: justify;
+    word-break: keep-all;
+    text-align: left;
+    margin: 1rem auto;
+    padding: 1rem;
 }
 
 .answerList:hover, .answerList:focus {
@@ -29,6 +42,7 @@
     border-radius: 20px;
     width: 80%;
     background-color: white;
+    margin: 1rem auto 0px;
 }
 
 .statusBar {
@@ -36,4 +50,24 @@
     border-radius: 20px;
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,33,71,1) 49%, rgba(27,89,102,0.3981967787114846) 100%);
+}
+
+@media (max-width: 600px) {
+    #qna {
+        display: none;
+        background-color: whitesmoke;
+        width: 100%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .qBox {
+        margin: 1.5rem;
+    }
+
+    .answerList {
+        margin: 7px 3px;
+        padding: 1rem;
+        width: 100%;
+    }
 }

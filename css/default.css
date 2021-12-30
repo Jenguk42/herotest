@@ -4,6 +4,7 @@ body{
 
 h1 {
     text-align: center;
+    word-break: keep-all;
 }
 
 .container {
@@ -15,9 +16,4 @@ h1 {
 
 * {
     font-family: 'IBM Plex Sans KR', sans-serif;
-}
-
-#notice {
-    color: #a8b0bd;
-    font-size: 10px;
 }

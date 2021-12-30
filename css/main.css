@@ -1,13 +1,15 @@
-#mainDesc {
-    text-align: justify;
-    font-size: 19px;
-}
-
 #main {
     background-color: whitesmoke;
     width: 80%;
     text-align: center;
     border-radius: 15px;
+    margin: 3rem auto;
+    padding: 3rem 0.5rem;
+}
+
+#mainDesc {
+    text-align: justify;
+    font-size: 19px;
 }
 
 .input-group {
@@ -15,10 +17,21 @@
     justify-content: center;
 }
 
+#notice {
+    color: #a8b0bd;
+    font-size: 10px;
+}
+
 @media (max-width: 540px) {
+    #main {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
     #mainDesc {
         font-size:17px;
     }
+    
     h1 {
         font-size: 32px;
     }

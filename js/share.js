@@ -14,7 +14,7 @@ function shareStoryWeb() {
           text: `코드네임 ${name}의 히어로 등급은 ${infoList[finalGrade].name}입니다.
 당신은 몇 등급 히어로인가요? 링크를 통해 확인하세요!
     
-#KNIS #지구를지켜라`,
+#${infoList[finalGrade].name}등급 #KNIS #지구를지켜라2`,
         })
     } else {
         Kakao.Story.share({

@@ -50,11 +50,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
-
 </head>
 <body> 
     <div class="container">
-        <section id="main" class="mx-auto my-5 py-5 px-2">
+        <section id="main">
             <h1>히어로 자가진단 <br> 간단 검사지</h1>
             <div class="col-lg-6 col-md-8 col-sm-8 col-8 mx-auto">
                 <img src="./img/nis-logo.png" alt="mainImage" class="img-fluid">
@@ -66,21 +65,21 @@
                 <input id="heroName" type="text" class="form-control" placeholder="코드네임" aria-label="codename" aria-describedby="button-addon2">
                 <button type="button" class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="js:begin() ">시작하기</button>
             </div>
-            <p id="notice" class="py-1">
+            <div id="notice" class="py-1">
                 ※ 본 테스트는 공인 히어로 등록증 발급에 사용할 수 없으며, <br> 테스트 결과 및 개인정보는 KNIS에 기록될 수 있습니다.
-            </p>
+            </div>
         </section>
-        <section id="qna" class="mx-auto my-5 pt-5 pb-4 px-4">
-            <div class="status mx-auto mt-3">
+        <section id="qna">
+            <div class="status">
                 <div class="statusBar">
                 </div>
             </div>
-            <div class="qBox mx-4 my-5 fadeIn">
+            <div class="qBox fadeIn">
             </div>
             <div class="answerBox">
             </div>
         </section>
-        <section id="result" class="mx-auto my-5 py-5 px-4">
+        <section id="result">
             <h1 id="heroName"></h1>
             <div id="resultImg" class="my-5"></div>
             <div id="gradeDec" class = "px-4"></div>

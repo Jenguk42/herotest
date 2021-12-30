@@ -14,11 +14,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="../img/image-og.png"/>
     <meta property="og:description" content="KNIS에서 제공하는 히어로용 무료 자가진단 테스트입니다." />
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-        Kakao.init('f36801e09fdfbbcdb6ef7a64897ee304');
-        Kakao.isInitialized();
-    </script>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
@@ -48,12 +43,12 @@
     <link rel="stylesheet" href="../css/result.css">
 </head>
 <body>
-    <section id="shareResult" class="mx-auto my-5 py-5 px-4">
-        <h1>당신의 히어로 등급은?</h1>
+    <section id="shareResult">
+        <h1>나의 히어로 등급은 S+입니다.</h1>
         <div id="resultImg" class="my-5">
-            <img src="../img/image-0.png" alt="0" class="image-fluid">
+            <img src="../img/image-0.png" alt="0" class = "col-lg-4 col-md-4 col-sm-6 col-6 mx-auto">
         </div>
-        <div id="resultDesc" class = "mb-4 px-5">
+        <div id="resultDesc" class = "mb-4 px-4">
             <p>
                 현재 대한민국 내 공식 인증된 S+급 히어로는 총 6인이며, 이는 공인 히어로 중 0.41%, 대한민국 전체 인구 중 0.0000001%에 육박하는 확률입니다. S+급 유명 인사로는 예지 능력을 활용하여 협회를 지휘하는 NIS 협회장 정태현 원사와 치유 능력으로 전세계 의료계에 꿈을 불어넣었던 1대 히어로 대표 故 백선 원사 등이 있습니다.
             </p>
@@ -69,10 +64,10 @@
                 location.href = "/index.html";
             }
         </script>
-        <button id='tryAgain' type="button" class="gohome btn btn-secondary btn-lg mt-4" onclick="js:moveHome()">내 등급 측정해보기</button>
-        <a href='https://constellations421.wixsite.com/nis-official' target="_blank">
-            <button id='nisLink' type="button" class="btn btn-secondary btn-lg mt-4">NIS 방문하기</button>
-        </a>
+        <div id="buttonContainer">
+            <button id='tryAgain' type="button" class="gohome btn btn-secondary btn-lg mt-2 mx-1" onclick="js:moveHome()">내 등급 측정해보기</button>
+            <button id='nisLink' type="button" class="btn btn-secondary btn-lg mt-2 mx-1" onclick="window.open('https://constellations421.wixsite.com/nis-official')">NIS 방문하기</button>
+        </div>
     </section>
 </body>
 </html>
